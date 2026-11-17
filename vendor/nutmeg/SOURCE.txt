@@ -1,0 +1,3 @@
+https://github.com/withqwerty/nutmeg
+1277aeb79c25e8c244617f8aa9dd5703732631a5
+Codex adaptation: Claude path variables resolved to local absolute paths.

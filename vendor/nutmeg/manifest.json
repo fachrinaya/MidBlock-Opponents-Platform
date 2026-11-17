@@ -1,0 +1,80 @@
+{
+  "repository": "https://github.com/withqwerty/nutmeg",
+  "revision": "1277aeb79c25e8c244617f8aa9dd5703732631a5",
+  "skills": [
+    {
+      "name": "nutmeg-acquire",
+      "path": "skills/acquire/SKILL.md"
+    },
+    {
+      "name": "nutmeg-analyse",
+      "path": "skills/analyse/SKILL.md"
+    },
+    {
+      "name": "nutmeg-brainstorm",
+      "path": "skills/brainstorm/SKILL.md"
+    },
+    {
+      "name": "nutmeg-compute",
+      "path": "skills/compute/SKILL.md"
+    },
+    {
+      "name": "nutmeg-heal",
+      "path": "skills/heal/SKILL.md"
+    },
+    {
+      "name": "nutmeg-learn",
+      "path": "skills/learn/SKILL.md"
+    },
+    {
+      "name": "nutmeg",
+      "path": "skills/nutmeg/SKILL.md"
+    },
+    {
+      "name": "nutmeg-research",
+      "path": "skills/research/SKILL.md"
+    },
+    {
+      "name": "nutmeg-review",
+      "path": "skills/review/SKILL.md"
+    },
+    {
+      "name": "nutmeg-store",
+      "path": "skills/store/SKILL.md"
+    },
+    {
+      "name": "nutmeg-wrangle",
+      "path": "skills/wrangle/SKILL.md"
+    }
+  ],
+  "files": {
+    "UPSTREAM_README.md": "686155f02feb3fd7033890efdb122bbdbf4f29aa1bf1471c684dec6fb56edc25",
+    "docs/accuracy-guardrail.md": "961a499a26fe821b16114e797d518c7c884f946dce0932f4f1b6f45a6879ee43",
+    "docs/alpha-testing.md": "9d3431be86cbfedbdc631985c94045ddc71c820bf976156e12f5f030423fd31e",
+    "docs/entity-resolution-routing.md": "24ee9ca9f5f1435671a05e504bf809c813b3945a67652bed9e1fb492004f8c5f",
+    "docs/glossary.md": "f77774530d00a23b364edf2077fe248c0293db31693e78e7d4bb50e3dff79db1",
+    "docs/metric-misuse.md": "6d713a83fec50e7d3f9bfe934d0bf5b6660529043919ca7438ab8a70e8322c6a",
+    "docs/plans/2026-10-01-001-feat-nutmeg-v0-5-research-ledger-plan.md": "c3cfaffc26ddf5c88b1c0510c89ed62c197f00fc8b88fb753ec1fb91aa6954fe",
+    "docs/provenance-contract.md": "ee3893023670ed61c721d1f38bc5aea8c5e52243de45fcd67389cccb0878367a",
+    "docs/publishing-playbook.md": "8dad006a1153c3742e30e4a9942daf628a5cd5dcfed510ec0713f22b5831ba0b",
+    "docs/superpowers/specs/2026-04-05-campos-design.md": "6703997ce7b024c2c33df18fcd25212d49d144634c6fae509295ece5d589d290",
+    "docs/team-config.md": "04d6446329209cff1c487313a9fc1d7454f1b67ad2f626fb5b2daa24a1a64e04",
+    "docs/understanding.md": "affd8c1932e78fa85d17166e8d6c08ed249ff5dcb59838d5d221bed2e71eb995",
+    "skills/_shared/campos-bridge.md": "f29231764de88d8841436903f669684fdb6d089e00aad9a0f207d0f69e4e8a6b",
+    "skills/acquire/SKILL.md": "db562f47a97764babd8fa71aa039af698c28d1729deb7899d6d25094bf2ed9e8",
+    "skills/analyse/SKILL.md": "a29ad167d072ed7876d009f72903efc91062706be7180a231c9bbb285476b289",
+    "skills/brainstorm/SKILL.md": "2260eb31b924d2a54d72a1e7a2ec75a29771b57df27f062e9c5516d779f3d747",
+    "skills/brainstorm/references/chart-canon.md": "f72259f094bb4d675aad6c8e075f50b52c9481b4b3e32f415d587a473df6f876",
+    "skills/brainstorm/references/viz-styles.md": "1544a3e018101c4636a14b5fced9c8d8e7d2a575dbca98171f1b24ebec7dbf10",
+    "skills/compute/SKILL.md": "e584be396fbdcf29aefff30d39aee0739a6ffe8ef027956375efb8ebdccef6a1",
+    "skills/heal/SKILL.md": "6952115000653738048fc2b3129f7b2a2c2695fc3e3289a784d99a4f5f9d3234",
+    "skills/learn/SKILL.md": "33e47e1d5ba2c7da185d8eaa1b38ca61a8bc979f156a02a88b201182ecf96adb",
+    "skills/nutmeg/SKILL.md": "1cb3178c47bb590fea81197b8b7896c298495d396140750676e079f925a71040",
+    "skills/nutmeg/references/init-flow.md": "e17b20679c0eace3455ae65cae97516f13bc7ef1f7dee67cd1ac60bb737137f0",
+    "skills/research/SKILL.md": "f51eec5bea04c26b0f781b0d38d0be3389a68c5d98df60907fa5bb5f4632fdbb",
+    "skills/research/references/publishing.md": "a4378b8383a809604f7ac9d29d34bd04f9046577e4aa37c33d6d1b5ed87b8860",
+    "skills/review/SKILL.md": "ef88735404c27d4788f276539889af7777d625f8d17e83ad1d85ff6bbcc5be03",
+    "skills/store/SKILL.md": "efd34e8c7c360b8cf07226ddd8af6c7828a90f4bde7ae6ba34dcb9ad8dcd1f82",
+    "skills/wrangle/SKILL.md": "626f4a70d4b9e04dd97de0f9e092732e2b77d66d033147e5597d76bd31c435b8"
+  }
+}

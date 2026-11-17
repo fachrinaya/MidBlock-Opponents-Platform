@@ -1,0 +1,67 @@
+{
+  "$defs": {
+    "ChartNote": {
+      "additionalProperties": false,
+      "properties": {
+        "figure_id": {
+          "title": "Figure Id",
+          "type": "string"
+        },
+        "explanation": {
+          "maxLength": 2500,
+          "minLength": 40,
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "figure_id",
+        "explanation"
+      ],
+      "title": "ChartNote",
+      "type": "object"
+    },
+    "SpaceNotes": {
+      "additionalProperties": false,
+      "properties": {
+        "season": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Season",
+          "type": "string"
+        },
+        "last5": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Last5",
+          "type": "string"
+        }
+      },
+      "required": [
+        "season",
+        "last5"
+      ],
+      "title": "SpaceNotes",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "space_notes": {
+      "$ref": "#/$defs/SpaceNotes"
+    },
+    "visualization_analysis": {
+      "items": {
+        "$ref": "#/$defs/ChartNote"
+      },
+      "title": "Visualization Analysis",
+      "type": "array"
+    }
+  },
+  "required": [
+    "space_notes",
+    "visualization_analysis"
+  ],
+  "title": "Space",
+  "type": "object"
+}

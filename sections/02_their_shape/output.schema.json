@@ -1,0 +1,74 @@
+{
+  "$defs": {
+    "ChartNote": {
+      "additionalProperties": false,
+      "properties": {
+        "figure_id": {
+          "title": "Figure Id",
+          "type": "string"
+        },
+        "explanation": {
+          "maxLength": 2500,
+          "minLength": 40,
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "figure_id",
+        "explanation"
+      ],
+      "title": "ChartNote",
+      "type": "object"
+    },
+    "ShapeNotes": {
+      "additionalProperties": false,
+      "properties": {
+        "last5": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Last5",
+          "type": "string"
+        },
+        "home": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Home",
+          "type": "string"
+        },
+        "away": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Away",
+          "type": "string"
+        }
+      },
+      "required": [
+        "last5",
+        "home",
+        "away"
+      ],
+      "title": "ShapeNotes",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "shape_notes": {
+      "$ref": "#/$defs/ShapeNotes"
+    },
+    "visualization_analysis": {
+      "items": {
+        "$ref": "#/$defs/ChartNote"
+      },
+      "title": "Visualization Analysis",
+      "type": "array"
+    }
+  },
+  "required": [
+    "shape_notes",
+    "visualization_analysis"
+  ],
+  "title": "Shape",
+  "type": "object"
+}

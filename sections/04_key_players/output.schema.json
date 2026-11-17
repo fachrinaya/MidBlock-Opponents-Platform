@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "ChartNote": {
+      "additionalProperties": false,
+      "properties": {
+        "figure_id": {
+          "title": "Figure Id",
+          "type": "string"
+        },
+        "explanation": {
+          "maxLength": 2500,
+          "minLength": 40,
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "figure_id",
+        "explanation"
+      ],
+      "title": "ChartNote",
+      "type": "object"
+    },
+    "OtherThreat": {
+      "additionalProperties": false,
+      "properties": {
+        "player_id": {
+          "title": "Player Id",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "number": {
+          "title": "Number",
+          "type": "string"
+        },
+        "what_he_does": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "What He Does",
+          "type": "string"
+        },
+        "your_response": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Your Response",
+          "type": "string"
+        }
+      },
+      "required": [
+        "player_id",
+        "name",
+        "number",
+        "what_he_does",
+        "your_response"
+      ],
+      "title": "OtherThreat",
+      "type": "object"
+    },
+    "Player": {
+      "additionalProperties": false,
+      "properties": {
+        "player_id": {
+          "title": "Player Id",
+          "type": "integer"
+        },
+        "strengths": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Strengths",
+          "type": "string"
+        },
+        "weaknesses": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Weaknesses",
+          "type": "string"
+        },
+        "how_to_play": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "How To Play",
+          "type": "string"
+        }
+      },
+      "required": [
+        "player_id",
+        "strengths",
+        "weaknesses",
+        "how_to_play"
+      ],
+      "title": "Player",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "key_players_summary": {
+      "maxLength": 6000,
+      "minLength": 40,
+      "title": "Key Players Summary",
+      "type": "string"
+    },
+    "key_players": {
+      "items": {
+        "$ref": "#/$defs/Player"
+      },
+      "title": "Key Players",
+      "type": "array"
+    },
+    "other_threats": {
+      "items": {
+        "$ref": "#/$defs/OtherThreat"
+      },
+      "title": "Other Threats",
+      "type": "array"
+    },
+    "visualization_analysis": {
+      "items": {
+        "$ref": "#/$defs/ChartNote"
+      },
+      "title": "Visualization Analysis",
+      "type": "array"
+    }
+  },
+  "required": [
+    "key_players_summary",
+    "key_players",
+    "other_threats",
+    "visualization_analysis"
+  ],
+  "title": "Players",
+  "type": "object"
+}

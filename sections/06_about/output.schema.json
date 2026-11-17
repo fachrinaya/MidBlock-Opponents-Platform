@@ -1,0 +1,71 @@
+{
+  "$defs": {
+    "AboutData": {
+      "additionalProperties": false,
+      "properties": {
+        "cutoff": {
+          "title": "Cutoff",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "fixture_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fixture Id"
+        },
+        "disclosures": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Disclosures",
+          "type": "array"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Model"
+        },
+        "review_status": {
+          "title": "Review Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "cutoff",
+        "source",
+        "fixture_id",
+        "disclosures",
+        "model",
+        "review_status"
+      ],
+      "title": "AboutData",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "about": {
+      "$ref": "#/$defs/AboutData"
+    }
+  },
+  "required": [
+    "about"
+  ],
+  "title": "About",
+  "type": "object"
+}

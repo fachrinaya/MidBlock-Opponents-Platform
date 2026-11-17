@@ -1,0 +1,16 @@
+{
+  "secret_material_present": false,
+  "raw_snapshot_included": true,
+  "snapshot_sha256": "f45f676190344512a0ef88d2728492adc4b4ca2fafd9cf927e65bc1bea6a43e5",
+  "dependency_wheels": 21,
+  "section_folders": 7,
+  "source_workspace_required": false,
+  "downloads_validation": {
+    "independent_environment": true,
+    "tests_passed": 29,
+    "offline_demo_passed": true,
+    "section_dry_run_passed": true,
+    "preview_url": "http://127.0.0.1:4182/english.html",
+    "live_db_or_model_called": false
+  }
+}

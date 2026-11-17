@@ -1,0 +1,94 @@
+{
+  "$defs": {
+    "AwarenessItem": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "maxLength": 300,
+          "minLength": 4,
+          "title": "Title",
+          "type": "string"
+        },
+        "analysis": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Analysis",
+          "type": "string"
+        },
+        "evidence_refs": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Refs",
+          "type": "array"
+        },
+        "drill": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Drill"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "title",
+        "analysis",
+        "evidence_refs"
+      ],
+      "title": "AwarenessItem",
+      "type": "object"
+    },
+    "Drill": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "maxLength": 300,
+          "minLength": 4,
+          "title": "Title",
+          "type": "string"
+        },
+        "instructions": {
+          "maxLength": 6000,
+          "minLength": 40,
+          "title": "Instructions",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "instructions"
+      ],
+      "title": "Drill",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "awareness_summary": {
+      "maxLength": 6000,
+      "minLength": 40,
+      "title": "Awareness Summary",
+      "type": "string"
+    },
+    "awareness": {
+      "items": {
+        "$ref": "#/$defs/AwarenessItem"
+      },
+      "maxItems": 5,
+      "minItems": 3,
+      "title": "Awareness",
+      "type": "array"
+    }
+  },
+  "required": [
+    "awareness_summary",
+    "awareness"
+  ],
+  "title": "Awareness",
+  "type": "object"
+}
